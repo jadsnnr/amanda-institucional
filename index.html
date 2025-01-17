@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Amanda || Arquiteta e Paisagismo</title>
+    <link rel="stylesheet" href="assets/style.css">
+
   </head>
   <body>
     <header>
-      <img src="#" alt="" class="logo-img" />
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+      <img src="assets/identity/logoAmandaHorizontalRmvd.png" alt="" class="logo-img" />
+     
+        <nav> <div class="menu" onclick="this.classList.toggle(`active`)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <!--<main>
       <section class="hero">
         <h4>Trasforme seu espaço</h4>
         <h1>Design de Interiores e Paisagismo</h1>
@@ -117,6 +126,12 @@
     </section>
     <footer>
       <p>Todos os direitos reservados - 2025</p>
-    </footer>
+    </footer>-->
+    <script>
+      function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
+    </script>
   </body>
 </html>
