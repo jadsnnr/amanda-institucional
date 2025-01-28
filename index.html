@@ -3,105 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Amanda || Arquiteta e Paisagismo</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/query.css">
 
   </head>
   <body>
     <header>
       <img src="assets/identity/logoAmandaHorizontalRmvd.png" alt="" class="logo-img" />
      
-        <nav> <div class="menu" onclick="this.classList.toggle(`active`)">
+        <nav>
+           <div class="menu" onclick="this.classList.toggle(`active`)">
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
+        <ul class="nav-list">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=5527999875777&text=Ol%C3%A1+Amanda+Faria!+Quero+saber+mais+sobre+seus+serviços&type=phone_number&app_absent=0" target="_blank">Contato</a></li>
         </ul>
       </nav>
     </header>
-    <!--<main>
-      <section class="hero">
+    <main>
+      <section class="hero" id="hero">
         <h4>Trasforme seu espaço</h4>
-        <h1>Design de Interiores e Paisagismo</h1>
-        <a href="" class="cta-button">Saiba mais</a>
+        <h1>Arquitetura e Paisagismo</h1>
+        <a href="https://api.whatsapp.com/send/?phone=5527999875777&text=Ol%C3%A1+Amanda+Faria!+Quero+saber+mais+sobre+sua+consultoria&type=phone_number&app_absent=0" target="_blank" class="cta-button">Solicite uma consultoria</a>
       </section>
-      <section>
-        <h4>Quem Somos</h4>
+      <section class="about" id="about">
+        <h4>Quem Somos?</h4>
         <h2>
-          A trajetória de Amanda na <br />Arquitetura e Design de Interiores
+          A trajetória de Amanda na <br />Arquitetura
         </h2>
         <p>
           Amanda Faria, arquiteta apaixonada, traz mais de 3 anos de experiência
           em arquitetura, design de interiores e paisagismo..
         </p>
-        <a href="#">Leia Mais</a>
+        <a class = "cta-button"" href="#">Leia Mais</a>
       </section>
-      <section>
-        <h4>Serviços</h4>
+      
+      <section class="services" id="services">
+        <h4>Nossos Serviços</h4>
         <h2>
           Design de Interiores e <br />
           Paisagismo de qualidade
         </h2>
-        <a href="" class="cta-button">Conheça nossos Serviços</a>
-        <ul>
-          <li>
-            <img src="#" alt="" />
-            <h6>01</h6>
-            <p>Design de Interiores</p>
+        <ul class="service-list">
+          <li class="service-item">
+            <img src="assets/layout/imgInteriores01-crop.jpg" alt="Design de Interiores" />
+            <div class="service-description">
+              <p>Interiores</p>
+            </div>
           </li>
-          <li>
-            <img src="#" alt="" />
-            <h6>02</h6>
-            <p>Paisagismo</p>
+          <li class="service-item">
+            <img src="assets/layout/imgPaisag03-crop.jpg" alt="Paisagismo" />
+            <div class="service-description">
+              <p>Paisagismo</p>
+            </div>
           </li>
-          <li>
-            <img src="#" alt="" />
-            <h6>03</h6>
-            <p>Paisagismo</p>
+          <li class="service-item" >
+            <img src="assets/layout/imgConsult01.jpg" alt="Consultoria" />
+            <div class="service-description">
+              <p>Consultoria</p>
+            </div>
+          </li>
+          <li class="service-item">
+            <img src="assets/layout/img07.jpg" alt="Consultoria" />
+            <div class="service-description">
+              <p>Arquitetônico</p>
+            </div>
           </li>
         </ul>
       </section>
       <section class="cta-section">
         <h4>Transforme seu ambiente em um espaço único e acolhedor. </h4>
         <h2>
-            Entre em contato agora mesmo e <br>
             Dê o primeiro passo para a mudança que você merece!
         </h2>
-        <a href="" class="cta-reverse-button">Fale Conosco</a>
+        <a href="https://api.whatsapp.com/send/?phone=5527999875777&text=Ol%C3%A1+Amanda+Faria!+Como+transformo+meu+lar+?&type=phone_number&app_absent=0" target="_blank" class="cta-reverse-button">Fale Conosco</a>
       </section>
-      <section>
-        <h4>Nossa Missão</h4>
-        <h2>Criar beleza e harmonia em <br>
-        cada projeto</h2>
+      <section class="mis-section">
+        <div class="mis-content">
+          <h4>Nossa Missão</h4>
+          <h2>Criar beleza e harmonia em <br /> cada projeto</h2>
+        </div>
         <aside>
-            <h2>Personalização Única</h2>
+          <div class="aside-content">
+            <h3>Personalização Única</h3>
             <p>Projetos feitos sob medida que atendem às necessidades e sonhos dos nossos clientes.</p>
-            <h2>Experiência Internacional</h2>
+          </div>
+          <div class="aside-content">
+            <h3>Experiência Internacional</h3>
             <p>Atuamos em projetos no Brasil, Inglaterra e EUA, trazendo inspiração global para seus espaços.</p>
-            <h2>Atenção aos Detalhes</h2>
+          </div>
+          <div class="aside-content">
+            <h3>Atenção aos Detalhes</h3>
             <p>Nosso compromisso com a excelência se reflete em cada detalhe do seu projeto.</p>
+          </div>
         </aside>
       </section>
-      <section class="grid-img-section">
-        <h4>Nossa Galeria</h4>
-        <h2>Explore Alguns de Nossos Projetos</h2>
-        <div class="grid-img-container">
-          <img src="#" alt="" />#
-          <img src="#" alt="" />#
-          <img src="#" alt="" />#
-          <img src="#" alt="" />#
-          <img src="#" alt="" />#
-          <img src="#" alt="" />#
-      </section>
       <section class="customers">
-        <img src="#" alt="" />#
-        <h4>Depoimentos</h4>
-        <h2>O que nossos clientes dizem</h2>
+        <div class="customers-content">
+          <h4>Depoimentos</h4>
+          <h2>O que nossos clientes
+        dizem</h2>
+      </div>
         <aside>
             <p>
                 "Amanda não só fez um lindo trabalho, mas também me ajudou a realizar um sonho. Minha clinica esta linda, todos estão amando. Agradeço muito pela dedicação e perfeição na execução do trabalho.
@@ -115,18 +127,58 @@
             </p>
         </aside>
       </section>
-    </main>
-    <section class="cta-section">
-        <h4>Leve inovação e estilo para o seu ambiente! </h4>
-        <h2>
-            Transforme ideias em realidade! <br>
-            Entre em contato agora e comece a criar o ambiente dos seus sonhos
-        </h2>
-        <a href="" class="cta-button">Fale Conosco</a>
-    </section>
-    <footer>
-      <p>Todos os direitos reservados - 2025</p>
-    </footer>-->
+      
+  </main>
+  <section class="cta-section">
+    <h4>Leve inovação e estilo para o seu ambiente! </h4>
+    <h2>
+        Transforme ideias em realidade!
+    </h2>
+    <a href="https://api.whatsapp.com/send/?phone=5527999875777&text=Ol%C3%A1+Amanda+Faria!+Quero+saber+mais+sobre+seus+serviços&type=phone_number&app_absent=0" target="_blank" class="cta-button">Fale Conosco</a>
+</section>
+    <footer class="footer-section">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/identity/logoAFRmvd.png" alt="">
+        </div>
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=5527999875777&text=Ol%C3%A1+Amanda+Faria!+Quero+saber+mais+sobre+seus+serviços&type=phone_number&app_absent=0" target="_blank">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Siga-nos</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/arq.amandafariaa?igsh=M3ljbmdxOGsxOTFm" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Amanda Faria. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    
+      
+      <!--
+      <section class="grid-img-section">
+        <h4>Nossa Galeria</h4>
+        <h2>Explore Alguns de Nossos Projetos</h2>
+        <div class="grid-img-container">
+          <img src="#" alt="" />#
+          <img src="#" alt="" />#
+          <img src="#" alt="" />#
+          <img src="#" alt="" />#
+          <img src="#" alt="" />#
+          <img src="#" alt="" />#
+      </section>
+      -->
+    
+    
     <script>
       function toggleMenu() {
   const menu = document.querySelector('.menu');
