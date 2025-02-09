@@ -4,6 +4,7 @@
         margin: 0;
     }
   header {
+    height: 15vh;
     align-items: center;
     justify-content: space-between;
     padding: 15px 40px;
@@ -14,8 +15,10 @@
   }
 
   header img {
-    width: 40vw;
+    width: 20vw;
+    margin-top: 1rem;
     max-width: 300px;
+    display: block;
   }
 
   .menu {
@@ -80,7 +83,7 @@
   
     /* About Section */
     .about {
-      height: 60vh; 
+      height: 50vh; 
       padding: 40px 60px;
       border-radius: 0px;
     }
@@ -164,6 +167,9 @@
     }
   
     /* Footer */
+    .footer-section {
+      height: 40vh;}
+
     .footer-content {
       padding: 40px 20px;
       flex-direction: row;
