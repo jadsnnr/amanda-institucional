@@ -20,8 +20,7 @@ body {
 /*inicio estilização menu*/
 header {
   display: flex;
-  background-color: transparent;
-  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.06);
   padding: 8px;
   justify-content: space-between;
   width: 100%;
@@ -66,14 +65,14 @@ nav {
 }
 
 .nav-list {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding: 0px;
+  background-color: rgba(0, 0, 0, 0.118);
+  backdrop-filter: blur(2px);
   display: none;
-  background-color: ;
   flex-direction: row;
   align-items: center;
   position: absolute;
-  top: 50px;
   right: 0px;
   width: 100vw;
   border-bottom: 1px solid rgba(189, 188, 188, 0.267);
@@ -100,6 +99,7 @@ nav ul li {
 a {
   text-decoration: none;
   color: white;
+  font-weight: 500;
   font-size: 14px;
   transition: color 0.2s ease;
 }
