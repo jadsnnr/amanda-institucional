@@ -21,6 +21,10 @@
     display: block;
   }
 
+  .img-nome{
+  display: none;
+}
+
   .menu {
     display: none;
   }
@@ -55,7 +59,7 @@
     .hero {
       height: 90vh; 
       padding: 60px;
-      background: url(layout/imgPaisag05.jpg) no-repeat fixed;
+      background: url(layout/capa2.jpg) no-repeat fixed;
       background-size: cover;
     }
   
