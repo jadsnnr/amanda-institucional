@@ -20,7 +20,8 @@ body {
 /*inicio estilização menu*/
 header {
   display: flex;
-  background-color: rgb(255, 254, 254);
+  background-color: transparent;
+  backdrop-filter: blur(6px);
   padding: 8px;
   justify-content: space-between;
   width: 100%;
@@ -41,7 +42,7 @@ nav {
   display: block;
   width: 60%;
   height: 4px;
-  background-color: #cfa188;
+  background-color: white;
   border-radius: 3px;
   transition: transform 0.3s ease, opacity 0.3s ease;
   margin-bottom: 5px;
@@ -60,7 +61,7 @@ nav {
 .menu.active span:nth-child(3) {
   transform: rotate(-50deg) translateY(-18px);
 }
-.menu.active + ul {
+.menu.active + .nav-list {
   display: flex !important;
 }
 
@@ -68,9 +69,9 @@ nav {
   margin-top: 2rem;
   padding: 0px;
   display: none;
-  flex-direction: column;
+  background-color: ;
+  flex-direction: row;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.959);
   position: absolute;
   top: 50px;
   right: 0px;
@@ -98,7 +99,7 @@ nav ul li {
 }
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: white;
   font-size: 14px;
   transition: color 0.2s ease;
 }
@@ -108,15 +109,17 @@ a:hover {
 }
 /*inicio estilização pagina principal*/
 .hero {
+  background: url(layout/capa.jpg) no-repeat fixed;
+  background-size: 60vh;
+  border-radius: 0px 0px 30px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
   width: 100%;
-  height: 40vh; 
-  background-color: white;
-  padding: 30px; /
-  text-align: left;
+  height: 60vh; 
+  padding: 30px;
+  margin-bottom: 1rem;
 }
 
 .hero h1 {
@@ -124,13 +127,12 @@ a:hover {
   font-size: 2rem; 
   margin-bottom: 5px;
   font-weight: 800;
+  color: white;
+
 }
 
 .hero h4 {
-  color: var(
-    --text-color,
-    #cfa188
-  );
+  color: var(--text-color,#cfa188);
   font-size: 1rem;
   font-weight: 800;
   padding-top: 6rem;
