@@ -20,7 +20,7 @@ body {
 /*inicio estilização menu*/
 header {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(0, 0, 0, 0.144);
   padding: 8px;
   justify-content: space-between;
   width: 100%;
@@ -109,7 +109,7 @@ a:hover {
 }
 /*inicio estilização pagina principal*/
 .hero {
-  background: url(layout/capa.jpg) no-repeat fixed;
+  background: url(layout/capa2.jpg) no-repeat fixed;
   background-size: 60vh;
   border-radius: 0px 0px 30px 30px;
   display: flex;
