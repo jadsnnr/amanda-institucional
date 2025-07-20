@@ -451,7 +451,7 @@ aside {
 
 /*FAB-WHATSAPP*/
 .whatsapp-fab {
-  position: fixed;
+  position: sticky;
   bottom: 20px;
   right: 20px;
   background-color: #25d366;
@@ -471,8 +471,4 @@ aside {
   transform: scale(1.1);
 }
 
-.whatsapp-fab img {
-  width: 30px;
-  height: 30px;
-}
 
