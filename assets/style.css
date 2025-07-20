@@ -231,7 +231,7 @@ h4 {
   justify-content: center;
   width: calc(100% - 40px);
   max-width: 300px;
-  max-height: 400px;
+  max-height: 45rem;
   background-color: #f1f1f1;
   border-radius: 10px;
   overflow: hidden;
