@@ -1,29 +1,28 @@
 /* Estilos para telas maiores */
 @media (min-width: 768px) {
-    *{
-        margin: 0;
-    }
+  * {
+    margin: 0;
+  }
   header {
-    height: 15vh;
+    height: 14vh;
     align-items: center;
     justify-content: space-between;
     padding: 15px 40px;
     border-bottom: 1px solid rgba(189, 188, 188, 0.267);
     position: fixed;
     z-index: 9999;
-
   }
 
   header img {
     width: 20vw;
-    margin-top: 1rem;
+    margin-top: 3rem;
     max-width: 300px;
     display: block;
   }
 
-  .img-nome{
-  display: none;
-}
+  .img-nome {
+    display: none;
+  }
 
   .menu {
     display: none;
@@ -54,143 +53,145 @@
   nav ul li a:hover {
     color: var(--text-color);
   }
-  
-    /* Hero Section */
-    .hero {
-      height: 90vh;
-      padding: 60px;
-      background: url(layout/capa2.jpg) no-repeat fixed bottom center;
-      background-size: cover;
 
-    }
-  
-    .hero h1 {
-      font-size: 3rem; 
-      color: white;
-
-    }
-  
-    .hero h4 {
-      font-size: 1.2rem;
-      padding-top: 60px;
- 
-    }
-  
-    .cta-button {
-      width: 25vw; 
-      font-size: 1.2rem; 
-    }
-
-    .cta-button:hover{
-      background-color: #e4d686;
-      color: white;
-    }
-  
-    /* About Section */
-    .about {
-      height: 50vh; 
-      padding: 40px 60px;
-      border-radius: 0px;
-    }
-  
-    h2 {
-      font-size: 2rem; 
-    }
-  
-    .about p {
-      font-size: 1.1rem; 
-    }
-  
-    /* Serviços */
-    .services {
-      padding: 60px 40px;
-    }
-  
-    .service-item {
-      width: calc(33.333% - 40px); 
-    }
-  
-    .service-item img {
-      height: 200px; 
-    }
-  
-    /* CTA Section */
-    .cta-section {
-      padding: 80px 60px;
-    }
-    .cta-section h2 {
-        width: 50vw;
-        text-align: center;
-    }
-    .cta-reverse-button {
-      width: 30vw; 
-      font-size: 1.5rem;
-    }
-    .cta-reverse-button:hover{
-      background-color: var(--text2-color
-      );
-      color: white;
-    }
-
-    .customers {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 60px 40px;
-        margin: 30px;
-    }
-    
-    .customers h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        display: block;
-    }
-    
-    .customers h4 {
-        display: block;
-        font-size: 1.2rem;
-    }
-    
-    .mis-section {
-        display: flex;
-        flex-direction: row-reverse;
-      padding: 60px 40px;
-      justify-content: space-around;
-    }
-    .mis-content {
-        width: 50vw;
-    }
-
-    aside {
-        max-width: 400px;
-        width: 50vw;
-        height: 500px;
-
-    }
-    .aside-content p {
-      font-size: 1.1rem; 
-    }
-  
-    /* Footer */
-    .footer-section {
-      height: 40vh;}
-
-    .footer-content {
-      padding: 40px 20px;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  
-    .footer-logo img {
-      width: 150px; 
-    }
-  
-    .footer-links h4, .footer-social h4 {
-      font-size: 1rem; 
-    }
-  
-    .footer-links a, .footer-social a {
-      font-size: 1rem; 
-    }
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+    padding: 60px;
+    background: url(layout/capa2.jpg) no-repeat fixed bottom center;
+    background-size: cover;
   }
-  
+
+  .hero h1 {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .services h4,
+  .about h4,
+  .cta-section h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .cta-button {
+    width: 25vw;
+    font-size: 1.2rem;
+  }
+
+  .cta-button:hover {
+    background-color: #e4d686;
+    color: white;
+  }
+
+  /* About Section */
+  .about {
+    align-items: center;
+    height: 50vh;
+    padding: 40px 40px;
+    border-radius: 0px;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  /* Serviços */
+  .services {
+    padding: 60px 40px;
+  }
+
+  .services h4 {
+    padding-bottom: 2rem;
+  }
+  .service-item {
+    width: calc(33.333% - 40px);
+  }
+
+  .service-item img {
+    height: 200px;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: 80px 60px;
+  }
+  .cta-section h2 {
+    width: 50vw;
+    text-align: center;
+  }
+
+  .mis-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .mis-content h4 {
+    font-size: 1.5rem;
+    font-weight: 500;}
+
+  .customers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+    margin: 30px;
+  }
+
+  .customers h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    display: block;
+  }
+
+  .customers h4 {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .mis-section {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 60px 40px;
+    justify-content: space-around;
+  }
+  .mis-content {
+    width: 50vw;
+  }
+
+  aside {
+    max-width: 400px;
+    width: 50vw;
+    height: 500px;
+  }
+  .aside-content p {
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  .footer-section {
+    height: 40vh;
+  }
+
+  .footer-content {
+    padding: 40px 20px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
+
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1rem;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    font-size: 1rem;
+  }
+}
